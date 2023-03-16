@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoiseAnswerActivity">
+
+    <TextView
+        android:id="@+id/txtResultAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/txtResultAnswer"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultAnswer">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radioOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="butRadioOne"
+                android:textSize="28sp" />
+
+            <RadioButton
+                android:id="@+id/radioTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="butRadioTwo"
+                android:textSize="28sp" />
+
+            <RadioButton
+                android:id="@+id/radioThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="butRadioThree"
+                android:textSize="28sp" />
+
+            <RadioButton
+                android:id="@+id/radioFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="butRadioFour"
+                android:textSize="28sp" />
+
+            <RadioButton
+                android:id="@+id/radioFive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="butRadioFive"
+                android:textSize="28sp" />
+
+            <RadioButton
+                android:id="@+id/radioSix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="butRadioSix"
+                android:textSize="28sp" />
+
+            <RadioButton
+                android:id="@+id/radioSeven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="butRadioSeven"
+                android:textSize="28sp" />
+
+            <RadioButton
+                android:id="@+id/radioEight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="butRadioEight"
+                android:textSize="28sp" />
+
+            <RadioButton
+                android:id="@+id/radioNine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="butRadioNine"
+                android:textSize="28sp" />
+
+            <RadioButton
+                android:id="@+id/radioTen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="butRadioTen"
+                android:textSize="28sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/butValidate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:onClick="butValidate"
+        android:text="@string/txtValidate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
