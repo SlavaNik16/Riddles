@@ -79,13 +79,15 @@ class MainActivity : AppCompatActivity() {
                 break
             }
         }
-        txtRiddle = Riddle.Riddles[rnd]
-        txtAnswer = Riddle.Answer[rnd]
 
+        txtAnswer = Riddle.Answer[rnd]
+        txtRiddle = Riddle.Riddles[rnd]
+
+        listRiddle.add(txtRiddle)
         listAnswer.clear()
 
         listAnswer.add(txtAnswer)
-        listRiddle.add(txtRiddle)
+
         while(listAnswer.size < 10){
             listAnswer.add(Riddle.Answer[Riddle.Answer.indices.random()])
         }
